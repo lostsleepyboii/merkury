@@ -1,0 +1,24 @@
+{
+	"name": "barbershop",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Личный проект 'Barbershop'",
+	"author": "lostsleepyboii",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/lostsleepyboii/barbershop.git"
+	},
+	"bugs": {
+		"url": "https://github.com/lostsleepyboii/barbershop/issues"
+	},
+	"homepage": "https://github.com/lostsleepyboii/barbershop",
+	"devDependencies": {
+		"editorconfig-tools": "0.1.1"
+	},
+	"scripts": {
+		"test": "editorconfig-tools check *"
+	},
+	"engines": {
+		"node": "5.0.0"
+	}
+}
