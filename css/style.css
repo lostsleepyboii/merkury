@@ -50,6 +50,18 @@ ul {
 	z-index: 1000;
 } 
 
+.header.fixed {
+	height: auto;
+
+	position: fixed;
+
+	background-color: #e8e8ea;
+}
+
+.header.fixed .header__inner {
+	padding: 15px 0;
+}
+
 .header__inner {
 	display: flex;
 	justify-content: space-between;
