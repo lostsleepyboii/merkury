@@ -687,8 +687,16 @@ ul {
 	}
 
 	.footer__author, .footer__contacts {
-		margin-bottom: 20px;
 		margin-right: 0px;
+
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+
+		border-bottom: 1.5px solid #2e2e2e;
+	}
+
+	.footer__list--last {
+		margin-right: 30px;
 	}
 
 	.footer__title {
@@ -722,6 +730,10 @@ ul {
 		padding: 50px 0;
 	}
 
+	.about__subtitle {
+		white-space: normal;
+	}
+
 	/* Count
 	=======================*/
 	.count {
@@ -736,6 +748,10 @@ ul {
 	=======================*/
 	.video {
 		padding: 50px 0;
+	}
+
+	.video__subtitle {
+		white-space: normal;
 	}
 
 	.video__youtube {
@@ -756,6 +772,8 @@ ul {
 
 	.reviews__text {
 		font-size: 20px;
+
+		white-space: normal;
 	}
 
 	/* Clients
@@ -805,6 +823,10 @@ ul {
 		font-size:	24px;
 	}
 
+	.about__subtitle {
+		white-space: normal;
+	}
+
 	/* Count
 	=======================*/
 	.count__item {
@@ -848,10 +870,17 @@ ul {
 		font-size: 24px;
 	}
 
+	.form__subtitle {
+		white-space: normal;
+	}
+
 	/* Footer
 	=======================*/
 	.footer__contacts {
 		margin-bottom: 0;
+		padding-bottom: 0;
+
+		border-bottom: none;
 	}
 
 	.footer__links {
