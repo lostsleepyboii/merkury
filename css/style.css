@@ -655,8 +655,10 @@ ul {
 	}
 
 	.intro__inner {
-		float: left;
-		margin: 0;
+		float: none;
+		text-align: center;
+
+		margin: 0 auto;
 	}
 
 	.intro__title {
