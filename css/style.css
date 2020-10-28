@@ -403,6 +403,10 @@ ul {
 	overflow: hidden;
 }
 
+.slick-slider:focus {
+	outline: none;
+}
+
 .slick-initialized.reviews__slider {
 	height: auto;
 }
