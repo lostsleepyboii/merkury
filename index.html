@@ -3,11 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Merkury</title>
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -17,7 +18,7 @@
 			<div class="header__inner">
 				<img src="img/logo.png" alt="Merkury">
         <!-- Navigation -->
-				<nav class ="nav">
+				<nav class ="nav" id="nav">
 					<a class="nav__link" href="#" data-scroll="#intro">Главная</a>
 					<a class="nav__link" href="#" data-scroll="#about">О нас</a>
 					<a class="nav__link" href="#" data-scroll="#works">Работы</a>
@@ -27,7 +28,7 @@
 				</nav>
 
 				<!-- Burger -->
-				<div class="burger">
+				<div class="burger" id="navToggle">
 					<span class="burger__item">Menu</span>
 				</div>
 			</div>
@@ -227,31 +228,51 @@
 	</div><!-- /.features -->
 
 <!-- Reviews -->
- <div class="reviews" id="reviews">
- 	<div class="container">
- 		<div class="reviews__list">
+	<div class="reviews" id="reviews">
+	 	<div class="container">
+		 	<div class="reviews__slider" id="reviewsSlider">
 
- 		  <div class="reviews__item">
- 		  	<p class="reviews__text">“Выдающаяся работа и превзошла все ожидания. 
-				Мне было очень приятно работать с ними над крупным первым проектом, 
-				и я с нетерпением жду начала следующего как можно скорее.”</p>
- 		  	<p class="reviews__author">иван иванов</p>
- 		  </div>
- 		  
- 		</div><!-- /.review__list -->
- 	</div><!-- /.container -->
- </div><!-- /.reviews -->
+		 		<div class="slick-item">
+			 		 <div class="reviews__item">
+			 		    <p class="reviews__text">“Lorem ipsum dolor sit amet consectetur, adipisicing, elit. 
+			 		    Fuga consectetur possimus vero eius, aperiam commodi illo? 
+			 		    A quod aspernatur laborum tempora autem beatae cumque ullam cupiditate voluptas eligendi magnam, officiis.”</p>
+			 		    <p class="reviews__author">федя федотов</p>
+			 		 </div>
+		 		</div>
+
+		 		<div class="slick-item">
+			 		  <div class="reviews__item">
+			 		    <p class="reviews__text">“Выдающаяся работа и превзошла все ожидания. 
+						  Мне было очень приятно работать с ними над крупным первым проектом, 
+						  и я с нетерпением жду начала следующего как можно скорее.”</p>
+			 		    <p class="reviews__author">иван иванов</p>
+			 		  </div>
+		 		</div>
+
+		 		<div class="slick-item">
+			 		 <div class="reviews__item">
+			 		    <p class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+			 		    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			 		    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
+			 		    <p class="reviews__author">рома романов</p>
+			 		 </div>
+		 		</div>		 		
+
+		 	</div><!-- /.reviewSlider -->
+	 	</div><!-- /.container -->
+	</div><!-- /.reviews -->
 
 <!-- Clients -->
- <div class="container">
- 	 <div class="clients">
- 		 <img class="clients__item" src="img/clients/client_1.png" alt="">
- 		 <img class="clients__item" src="img/clients/client_2.png" alt="">
- 		 <img class="clients__item" src="img/clients/client_3.png" alt="">
- 		 <img class="clients__item" src="img/clients/client_4.png" alt="">
- 		 <img class="clients__item" src="img/clients/client_5.png" alt="">
- 	 </div>
- </div>
+	<div class="container">
+	 	 <div class="clients">
+	 		 <img class="clients__item" src="img/clients/client_1.png" alt="">
+	 		 <img class="clients__item" src="img/clients/client_2.png" alt="">
+	 		 <img class="clients__item" src="img/clients/client_3.png" alt="">
+	 		 <img class="clients__item" src="img/clients/client_4.png" alt="">
+	 		 <img class="clients__item" src="img/clients/client_5.png" alt="">
+	 	 </div>
+	</div>
 
 <!-- Form -->
 	<div class="form" id="form">
@@ -341,7 +362,8 @@
  </footer><!-- /.footer-->
 
 <!-- Javascript -->
-	<script type="text/javascript" src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
