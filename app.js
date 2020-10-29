@@ -57,7 +57,12 @@ $(function() {
 	  initialSlide: 1
 	});
 
-
+	/* Gallery: https://fancyapps.com/fancybox/3/ */
+	$('[data-fancybox]').fancybox({
+		toolbar: false,
+		smallBtn: true,
+		protect: true
+	})
 
 
  });
