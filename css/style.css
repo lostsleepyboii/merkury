@@ -158,6 +158,10 @@ ul {
 	transition: background .1s linear;
 }
 
+.btn:focus {
+	outline: 0;
+}
+
 .btn--cyan {
 	background-color: #10c9c3;
 }
